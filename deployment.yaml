@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javamaven
+  labels:
+    app: javamaven
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javamaven
+  template:
+    metadata:
+      labels:
+        app: javamaven
+    spec:
+      containers:
+      - name: javamaven
+        image: sheetalsshetty/java:v3
+        ports:
+        - containerPort: 8080
