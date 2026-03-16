@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: javamaven
-        image: sheetalsshetty/java:v3
+        image: suhaasdm/java:v1
         ports:
         - containerPort: 8080
